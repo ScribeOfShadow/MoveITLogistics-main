@@ -1,0 +1,48 @@
+﻿@model TestDbCRUD.Models.UpdateOrderViewModel
+
+
+@{
+}
+<h1>Edit Order</h1>
+<form method="post" action="View" class="mt-4">
+    <div class="mb-3">
+    <label for="" class="form-label">Id</label>
+    <input type="text" class="form-control" asp-for="Id" readonly>
+  </div>
+  <div class="mb-3">
+    <label for="" class="form-label">Company Name</label>
+    <input type="text" class="form-control" asp-for="CompanyName">
+  </div>
+  <div class="mb-3">
+    <label for="" class="form-label">Contents</label>
+    <input type="text" class="form-control" asp-for="Contents">
+  </div>
+  <div class="mb-3">
+    <label for="" class="form-label">Quantity</label>
+    <input type="number" class="form-control" asp-for="Quantity">
+  </div>
+  <div class="mb-3">
+    <label for="" class="form-label">Pickup Location</label>
+    <input type="text" class="form-control" asp-for="PickupLocation">
+  </div>
+  <div class="mb-3">
+    <label for="" class="form-label">Destination</label>
+    <input type="text" class="form-control" asp-for="Destination">
+  </div>
+    <div class="mb-3">
+    <label for="" class="form-label">Date of Order</label>
+    <input type="date" class="form-control" asp-for="OrderDate">
+  </div>
+  <div class="mb-3">
+    <label for="" class="form-label">ETA</label>
+    <input type="date" class="form-control" asp-for="ETA">
+  </div>
+
+
+  <button type="submit" class="btn btn-primary">Submit</button>
+
+
+  <button type="submit" class="btn btn-danger" 
+  asp-action="Delete"
+  asp-controller="Orders">Delete</button>
+</form>

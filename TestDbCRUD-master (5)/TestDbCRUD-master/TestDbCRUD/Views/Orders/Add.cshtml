@@ -1,0 +1,72 @@
+﻿@model TestDbCRUD.Models.AddOrderViewModel
+@{
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="~/css/AutoFill.css" rel="stylesheet">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script type="module" src="~/js/AutoFill.js"></script>
+</head>
+<body>
+
+    <h1>Add New Order</h1>
+    <form method="post" action="Add" class="mt-4">
+
+        <div class="mb-3">
+            <label for="" class="form-label">Company Name</label>
+            <input type="text" class="form-control" asp-for="CompanyName" required>
+        </div>
+        <div class="mb-3">
+            <label for="" class="form-label">Contents</label>
+            <input type="text" class="form-control" asp-for="Contents" required>
+        </div>
+        <div class="mb-3">
+            <label for="" class="form-label">Quantity</label>
+            <input type="number" class="form-control" asp-for="Quantity" required pattern="[0-9]+">
+            <small class="text-danger">Please enter a valid number (no letters or special characters).</small>
+        </div>
+
+        <div class="mb-3">
+            <label for="pac-input" class="form-label">Pickup Location</label>
+            <input type="text" class="form-control" id="pac-input" asp-for="PickupLocation" required>
+        </div>
+        <div class="mb-3">
+            <label for="dest-input" class="form-label">Destination</label>
+            <input type="text" class="form-control" id="dest-input" asp-for="Destination" required>
+        </div>
+
+        <div class="mb-3">
+            <label for="" class="form-label">Date of Order</label>
+            <input type="date" class="form-control" asp-for="OrderDate" required>
+        </div>
+        <div class="mb-3">
+            <label for="" class="form-label">ETA</label>
+            <input type="date" class="form-control" asp-for="ETA" required>
+        </div>
+        <input type="text" id="pickup-place-id" asp-for="PickupLocationID" style="display:none">
+        <input type="text" id="dest-place-id" asp-for="DestinationID" style="display: none">
+
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+
+    <div id="map"></div>
+    <div id="infowindow-content">
+        <span id="place-name" class="title"></span><br />
+        <strong>Place ID:</strong> <span id="place-id"></span><br />
+        <span id="place-address"></span>
+    </div>
+
+    <!--
+      The `defer` attribute causes the callback to execute after the full HTML
+      document has been parsed. For non-blocking uses, avoiding race conditions,
+      and consistent behavior across browsers, consider loading using Promises.
+      See https://developers.google.com/maps/documentation/javascript/load-maps-js-api
+      for more information.
+      -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBRh0MvECIb_kKZyEdI4KaTFDipuHno19w&callback=initMap&libraries=places&v=weekly"
+            defer></script>
+
+</body>
+</html>

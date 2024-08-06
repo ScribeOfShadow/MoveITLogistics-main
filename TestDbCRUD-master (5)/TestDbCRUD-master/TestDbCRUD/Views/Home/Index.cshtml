@@ -1,0 +1,162 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="~/css/index.css">
+    <style>
+        body {
+            background-color: #ffffff;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25'%3E%3Cdefs%3E%3ClinearGradient id='a' gradientUnits='userSpaceOnUse' x1='0' x2='0' y1='0' y2='100%25' gradientTransform='rotate(240)'%3E%3Cstop offset='0' stop-color='%23ffffff'/%3E%3Cstop offset='1' stop-color='%234FE'/%3E%3C/linearGradient%3E%3Cpattern patternUnits='userSpaceOnUse' id='b' width='540' height='450' x='0' y='0' viewBox='0 0 1080 900'%3E%3Cg fill-opacity='0.1'%3E%3Cpolygon fill='%23444' points='90 150 0 300 180 300'/%3E%3Cpolygon points='90 150 180 0 0 0'/%3E%3Cpolygon fill='%23AAA' points='270 150 360 0 180 0'/%3E%3Cpolygon fill='%23DDD' points='450 150 360 300 540 300'/%3E%3Cpolygon fill='%23999' points='450 150 540 0 360 0'/%3E%3Cpolygon points='630 150 540 300 720 300'/%3E%3Cpolygon fill='%23DDD' points='630 150 720 0 540 0'/%3E%3Cpolygon fill='%23444' points='810 150 720 300 900 300'/%3E%3Cpolygon fill='%23FFF' points='810 150 900 0 720 0'/%3E%3Cpolygon fill='%23DDD' points='990 150 900 300 1080 300'/%3E%3Cpolygon fill='%23444' points='990 150 1080 0 900 0'/%3E%3Cpolygon fill='%23DDD' points='90 450 0 600 180 600'/%3E%3Cpolygon points='90 450 180 300 0 300'/%3E%3Cpolygon fill='%23666' points='270 450 180 600 360 600'/%3E%3Cpolygon fill='%23AAA' points='270 450 360 300 180 300'/%3E%3Cpolygon fill='%23DDD' points='450 450 360 600 540 600'/%3E%3Cpolygon fill='%23999' points='450 450 540 300 360 300'/%3E%3Cpolygon fill='%23999' points='630 450 540 600 720 600'/%3E%3Cpolygon fill='%23FFF' points='630 450 720 300 540 300'/%3E%3Cpolygon points='810 450 720 600 900 600'/%3E%3Cpolygon fill='%23DDD' points='810 450 900 300 720 300'/%3E%3Cpolygon fill='%23AAA' points='990 450 900 600 1080 600'/%3E%3Cpolygon fill='%23444' points='990 450 1080 300 900 300'/%3E%3Cpolygon fill='%23222' points='90 750 0 900 180 900'/%3E%3Cpolygon points='270 750 180 900 360 900'/%3E%3Cpolygon fill='%23DDD' points='270 750 360 600 180 600'/%3E%3Cpolygon points='450 750 540 600 360 600'/%3E%3Cpolygon points='630 750 540 900 720 900'/%3E%3Cpolygon fill='%23444' points='630 750 720 600 540 600'/%3E%3Cpolygon fill='%23AAA' points='810 750 720 900 900 900'/%3E%3Cpolygon fill='%23666' points='810 750 900 600 720 600'/%3E%3Cpolygon fill='%23999' points='990 750 900 900 1080 900'/%3E%3Cpolygon fill='%23999' points='180 0 90 150 270 150'/%3E%3Cpolygon fill='%23444' points='360 0 270 150 450 150'/%3E%3Cpolygon fill='%23FFF' points='540 0 450 150 630 150'/%3E%3Cpolygon points='900 0 810 150 990 150'/%3E%3Cpolygon fill='%23222' points='0 300 -90 450 90 450'/%3E%3Cpolygon fill='%23FFF' points='0 300 90 150 -90 150'/%3E%3Cpolygon fill='%23FFF' points='180 300 90 450 270 450'/%3E%3Cpolygon fill='%23666' points='180 300 270 150 90 150'/%3E%3Cpolygon fill='%23222' points='360 300 270 450 450 450'/%3E%3Cpolygon fill='%23FFF' points='360 300 450 150 270 150'/%3E%3Cpolygon fill='%23444' points='540 300 450 450 630 450'/%3E%3Cpolygon fill='%23222' points='540 300 630 150 450 150'/%3E%3Cpolygon fill='%23AAA' points='720 300 630 450 810 450'/%3E%3Cpolygon fill='%23666' points='720 300 810 150 630 150'/%3E%3Cpolygon fill='%23FFF' points='900 300 810 450 990 450'/%3E%3Cpolygon fill='%23999' points='900 300 990 150 810 150'/%3E%3Cpolygon points='0 600 -90 750 90 750'/%3E%3Cpolygon fill='%23666' points='0 600 90 450 -90 450'/%3E%3Cpolygon fill='%23AAA' points='180 600 90 750 270 750'/%3E%3Cpolygon fill='%23444' points='180 600 270 450 90 450'/%3E%3Cpolygon fill='%23444' points='360 600 270 750 450 750'/%3E%3Cpolygon fill='%23999' points='360 600 450 450 270 450'/%3E%3Cpolygon fill='%23666' points='540 600 630 450 450 450'/%3E%3Cpolygon fill='%23222' points='720 600 630 750 810 750'/%3E%3Cpolygon fill='%23FFF' points='900 600 810 750 990 750'/%3E%3Cpolygon fill='%23222' points='900 600 990 450 810 450'/%3E%3Cpolygon fill='%23DDD' points='0 900 90 750 -90 750'/%3E%3Cpolygon fill='%23444' points='180 900 270 750 90 750'/%3E%3Cpolygon fill='%23FFF' points='360 900 450 750 270 750'/%3E%3Cpolygon fill='%23AAA' points='540 900 630 750 450 750'/%3E%3Cpolygon fill='%23FFF' points='720 900 810 750 630 750'/%3E%3Cpolygon fill='%23222' points='900 900 990 750 810 750'/%3E%3Cpolygon fill='%23222' points='1080 300 990 450 1170 450'/%3E%3Cpolygon fill='%23FFF' points='1080 300 1170 150 990 150'/%3E%3Cpolygon points='1080 600 990 750 1170 750'/%3E%3Cpolygon fill='%23666' points='1080 600 1170 450 990 450'/%3E%3Cpolygon fill='%23DDD' points='1080 900 1170 750 990 750'/%3E%3C/g%3E%3C/pattern%3E%3C/defs%3E%3Crect x='0' y='0' fill='url(%23a)' width='100%25' height='100%25'/%3E%3Crect x='0' y='0' fill='url(%23b)' width='100%25' height='100%25'/%3E%3C/svg%3E");
+            background-attachment: fixed;
+            background-size: cover;
+        }
+
+        h1 {
+            font-size: 24px;
+        }
+
+        /* Styles for the image carousel */
+        .slide-container {
+            width: 1250px;
+            height: 620px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+
+
+
+        .mySlides {
+            display: none;
+            width: 100%;
+        }
+
+            .mySlides img {
+                width: 100%;
+                height: auto;
+            }
+
+        /* Add styling to the navigation dots */
+        .dot-container {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .dot {
+            height: 10px;
+            width: 10px;
+            margin: 0 4px;
+            background-color: #888;
+            border-radius: 50%;
+            display: inline-block;
+            cursor: pointer;
+        }
+
+        .active-dot {
+            background-color: white;
+        }
+
+        .container {
+            background-color: #f4f4f4;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            overflow: visible;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        .icon {
+            margin-right: 10px;
+        }
+
+        p {
+            color: #555;
+        }
+
+    </style>
+    <title>Startup</title>
+</head>
+<body>
+
+    <!-- Start of slide -->
+    <div class="slide-container">
+        <img class="mySlides" src="~/images/Slide1.jpg">
+        <img class="mySlides" src="~/images/Slide2.jpg">
+        <img class="mySlides" src="~/images/Slide3.jpg">
+
+    </div>
+
+    <div class="dot-container">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
+
+    <div class="container">
+        <h1>About Us - MoveIT Logistics</h1>
+        <p>
+            Welcome to MoveIT Logistics, where precision, efficiency, and commitment converge to drive the wheels of commerce in the heart of South Africa. Established in 1995, our journey began with a singular vision - to redefine logistics and transportation services in Durban, and beyond.
+        </p>
+        <p>
+            <span class="icon">&#x1F6E0;</span> Our Origin: MoveIT Logistics was born out of the dynamic and bustling city of Durban. With the Indian Ocean to our east and the towering Drakensberg Mountains to our west, we are ideally situated at the crossroads of global trade. Durban's strategic location as one of South Africa's busiest ports has made it a vital hub for import and export, and we recognized the immense potential to create a logistics company that could seamlessly connect businesses with the world.
+        </p>
+        <p>
+            <span class="icon">&#x2694;</span> Our Commitment to Excellence: From our inception, we made it our mission to provide the highest quality logistics services that are reliable, flexible, and affordable. We invest in state-of-the-art technology, a well-maintained fleet, and a dedicated team of professionals who are experts in their respective fields. We understand that every client has unique requirements, so we tailor our services to suit their individual needs.
+        </p>
+        <p>
+            <span class="icon">&#x1F6E3;</span> Our Services:
+        </p>
+        <ul>
+            <li><span class="icon">&#x1F4E6;</span> Freight Forwarding: We streamline the movement of cargo, ensuring that it reaches its destination safely and on time. Our comprehensive network of partners and agents allows us to handle shipments of any size or complexity.</li>
+            <li><span class="icon">&#x1F3E0;</span> Warehousing: Our modern warehouses offer secure storage solutions for all types of goods. With advanced inventory management systems, we ensure that your products are readily accessible whenever you need them.</li>
+            <li><span class="icon">&#x1F69A;</span> Transportation: We operate a diverse fleet of vehicles, from trucks to specialized equipment, to deliver your goods efficiently and safely. Our experienced drivers and well-maintained vehicles guarantee reliable transport services.</li>
+            <li><span class="icon">&#x1F6AA;</span> Customs Clearance: Navigating the complex world of customs regulations can be challenging. We handle all customs procedures, ensuring compliance and expediting the clearance process.</li>
+            <li><span class="icon">&#x1F4D3;</span> Supply Chain Management: We optimize your supply chain, reducing costs and enhancing efficiency. Our solutions improve visibility, control, and responsiveness throughout your supply chain.</li>
+        </ul>
+        <p>
+            <span class="icon">&#x1F468;&#x1F4BC;</span> Our Team: At MoveIT Logistics, we attribute our success to the dedication and expertise of our team. Our staff comprises logistics experts, transport professionals, customs specialists, and customer service agents, all working together with a single goal in mind: your satisfaction.
+        </p>
+        <p>
+            <span class="icon">&#x1F30D;</span> Community and Sustainability: As a Durban-based company, we recognize our responsibility to the local community and the environment. We actively engage in corporate social responsibility initiatives and adopt sustainable practices in our operations to contribute positively to our surroundings.
+        </p>
+        <p>
+            <span class="icon">&#x1F4B0;</span> Our Vision: Our vision extends beyond South Africa's borders. We aim to become a leading logistics provider, connecting businesses globally while maintaining the same level of personalized service that has set us apart since our founding.
+        </p>
+        <p>
+            <span class="icon">&#x2705;</span> Choose MoveIT Logistics for your logistics needs, and experience a new standard of excellence in the world of transportation and supply chain management. We're not just a logistics company; we're your trusted partner in connecting Durban to the world.
+        </p>
+        <p>Join us on our journey to make logistics smoother, smarter, and more sustainable with MoveIT Logistics.</p>
+        <br />
+    </div>
+
+
+
+    <script>
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            myIndex++;
+            if (myIndex > x.length) { myIndex = 1; }
+            x[myIndex - 1].style.display = "block";
+            for (i = 0; i < dots.length; i++) {
+                dots[i].classList.remove("active-dot");
+            }
+            dots[myIndex - 1].classList.add("active-dot");
+            setTimeout(carousel, 4000); // Change image every 4 seconds
+        }
+    </script>
+    <!-- End of slide -->
+</body>
+</html>

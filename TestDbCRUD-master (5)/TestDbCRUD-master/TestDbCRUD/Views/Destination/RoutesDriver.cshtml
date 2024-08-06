@@ -1,0 +1,61 @@
+﻿@{
+    ViewData["Title"] = "Routes";
+    Layout = "_LayoutDriver";
+}
+
+
+@model List<TestDbCRUD.Models.Domain.Orders>
+
+@{
+}
+<h1>Order Routes</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Company Name</th>
+            <th>Contents</th>
+            <th>Quantity</th>
+            <th>Pickup Location</th>
+            <th>Destination</th>
+            <th>Order Date</th>
+            <th> </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var order in Model)
+        {
+            <tr>
+                <td>@order.Id</td>
+                <td>@order.CompanyName</td>
+                <td>@order.Contents</td>
+                <td>@order.Quantity</td>
+                <td>@order.PickupLocation</td>
+                <td>@order.Destination</td>
+                @*  <td>@order.DestinationID</td>
+            <td>@order.PickupLocationID</td> *@
+                <td>@order.OrderDate.ToString("dd-MM-yyyy")</td>
+                @* <td><a href="Maps/Destination">View Route</a></td> *@
+                <td><a href="Maps/Destination?pickupLocation=@order.PickupLocationID&destination=@order.DestinationID">View Route</a></td>
+                <td>
+                    <form method="post" action="@Url.Action("Status", "Orders")">
+                        <input type="hidden" name="id" value="@order.Id" />
+                        <button type="submit" class="btn btn-danger change-status-button" data-order-id="@order.Id">Change Status</button>
+                    </form>
+                </td>
+
+            </tr>
+
+        }
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
